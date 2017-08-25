@@ -6,7 +6,7 @@ Symbol sets are stored in text files.
 
 ### Example use case:
 
-This can be used to convert converts 81 IOTA Seed of base 27 to 27 words of base 19683.  log(27^81, 19683) -> 27
+This can be used to convert 81 IOTA Seed of base 27 to 27 words of base 19683.  log(27^81, 19683) -> 27
 
 ### To Use:
 
