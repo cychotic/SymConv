@@ -14,4 +14,5 @@ if __name__ == '__main__':
     with open('words.txt', 'r') as f:
         words = f.read().splitlines()
 
-    print("".join(syms), " ".join(convert(syms,symbols,words)))
+    print("".join(syms))
+    print(" ".join(convert(syms,symbols,words)))
