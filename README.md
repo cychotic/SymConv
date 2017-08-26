@@ -17,3 +17,11 @@ This can be used to convert 81 IOTA Seed of base 27 to 27 words of base 19683.  
 ### To Test:
 
 `python SymConv.py`
+
+### To Generate a IOTA seed with phrase
+
+`python iota_seed_gen.py`
+
+### Note:
+
+words.txt may change, if you are using the converter or generator, make sure you know which words.txt you are using.
