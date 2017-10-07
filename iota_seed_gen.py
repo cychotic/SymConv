@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 if __name__ == '__main__':
 
     from random import SystemRandom
@@ -6,7 +8,7 @@ if __name__ == '__main__':
     alphabet = '9ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     generator = SystemRandom()
 
-    syms = list(generator.choice(alphabet) for _ in range(81))
+    seed = list(generator.choice(alphabet) for _ in range(81))
 
     with open('symbols.txt', 'r') as f:
         symbols = f.read().splitlines()
@@ -14,5 +16,9 @@ if __name__ == '__main__':
     with open('words.txt', 'r') as f:
         words = f.read().splitlines()
 
-    print("".join(syms))
-    print(" ".join(convert(syms,symbols,words)))
+    # verify seed before printing
+    if convert(convert(seed, symbols, words), words, symbols) == seed:
+        print("".join(seed))
+        print(" ".join(convert(seed,symbols,words)))
+    else:
+        print("Generator failed. Do not use!")

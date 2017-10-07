@@ -25,3 +25,13 @@ This can be used to convert 81 IOTA Seed of base 27 to 27 words of base 19683.  
 ### Note:
 
 words.txt may change, if you are using the converter or generator, make sure you know which words.txt you are using.
+
+### Warning:
+
+Symbols used in words.txt and symbols.txt must be a UNIQUE set.
+
+### To Customize:
+
+You can modify words.txt/symbols.txt anyway you like.  But it must be a set with UNIQUE values.  The size of words.txt/symbols.txt must be compatible with each other.
+
+wordutil.py contains function that filter out

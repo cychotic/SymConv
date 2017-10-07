@@ -32,9 +32,8 @@ def convert(symbols, list_x, list_y):
         raise ValueError("Symbol list sizes not compatible")
     num = value
     for x in range(int(loop)):
-        mod = num % len_y
-        new_symbols.insert(0,master_y[mod])
-        num = int((num-mod)/len_y)
+        new_symbols.insert(0,master_y[num % len_y])
+        num = num // len_y
 
     return new_symbols
 
