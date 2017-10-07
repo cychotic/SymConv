@@ -34,4 +34,4 @@ Symbols used in words.txt and symbols.txt must be a UNIQUE set.
 
 You can modify words.txt/symbols.txt anyway you like.  But it must be a set with UNIQUE values.  The size of words.txt/symbols.txt must be compatible with each other.
 
-wordutil.py contains function that filter out
+wordutil.py contains functions that I used to filter out unwanted words.  Read the code to see the filters.
